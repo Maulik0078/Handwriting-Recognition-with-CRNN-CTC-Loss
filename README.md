@@ -13,7 +13,6 @@ A full handwriting recognition pipeline that combines **CNNs**, **Bidirectional 
 - [Project Structure](#project-structure)
 - [Setup & Installation](#setup--installation)
 - [Usage](#usage)
-- [Task Breakdown](#task-breakdown)
 - [Model Architecture](#model-architecture)
 - [Dataset](#dataset)
 - [Key Concepts](#key-concepts)
@@ -89,22 +88,6 @@ Make sure to switch to a **GPU runtime**: `Runtime → Change runtime type → T
 ```bash
 jupyter notebook Handwriting_Recognition.ipynb
 ```
-
----
-
-## Task Breakdown
-
-| Task | Description | Points |
-|------|-------------|-------:|
-| Task 1 | Data loading, cleaning, and train/val/test splitting | 10 |
-| Task 2 | Vocabulary building & `StringLookup` layers | 10 |
-| Task 3 | `tf.data` pipeline & label vectorization with padding | 15 |
-| Q1 | Explain CTC loss: `input_length`, `label_length`, vocab `+2` | 10 |
-| Task 4 | Build the CRNN model architecture | 20 |
-| Task 5 | Training loop with `EditDistanceCallback` | 15 |
-| Task 6 | Decode predictions & visualize on test set | 20 |
-| **Total** | | **100** |
-
 ---
 
 ## Model Architecture
